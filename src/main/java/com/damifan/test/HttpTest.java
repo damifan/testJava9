@@ -8,6 +8,9 @@ import jdk.incubator.http.HttpResponse;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.function.Supplier;
 
 /**
  * @author wanglei
@@ -18,7 +21,7 @@ import java.net.URISyntaxException;
  */
 public class HttpTest {
 
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {
 
         HttpClient httpClient = HttpClient.newHttpClient();
         HttpRequest req =
@@ -34,6 +37,9 @@ public class HttpTest {
         HttpResponse<String> httpResponse1 = httpClient.send(req, HttpResponse.BodyHandler.asString());
         System.out.println(httpResponse1.body());
 
+        CompletableFuture<HttpResponse<String>> httpResponse2 = httpClient.sendAsync(req, HttpResponse.BodyHandler.asString());
+        
+        System.out.println();
 
     }
 }
