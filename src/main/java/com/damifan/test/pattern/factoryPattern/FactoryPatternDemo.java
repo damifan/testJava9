@@ -26,5 +26,8 @@ public class FactoryPatternDemo {
 
         //调用 Square 的 draw 方法
         shape3.draw();
+
+        Shape shape4 = (Circle) ShapeFactory.getClass(Circle.class);
+        shape4.draw();
     }
 }
