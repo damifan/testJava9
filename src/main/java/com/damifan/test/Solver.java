@@ -24,6 +24,7 @@ public class Solver extends Thread {
     public void run() {
         try {
             while (true) {
+                System.out.println(taskQueue.size());
                 //从队列中取出任务执行，注意这里用了take方法，所以如果队列空了，那么线程会等待，直到有任务来了，继续执行
                 Runnable task = taskQueue.take();
                 System.out.println("消费者" + name + "接收了一个任务");

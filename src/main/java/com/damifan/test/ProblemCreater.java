@@ -18,11 +18,12 @@ public class ProblemCreater {
         for (int i = 1; i < 10; i++) {
 
             //定义一个新的任务
+            int finalI = i;
             Runnable task = () -> {
                 Random random = new Random();
                 //随机一个数字模拟需要解决的时间
                 int randomTime = Math.abs(random.nextInt()) % 20;
-                //System.out.println("这个任务需要解决时间为："+randomTime);
+                System.out.println("这个任务" + finalI + "需要解决时间为：" + randomTime + "S");
                 try {
                     Thread.sleep(randomTime * 1000);
                 } catch (InterruptedException e) {
