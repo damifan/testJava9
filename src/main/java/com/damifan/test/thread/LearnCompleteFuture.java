@@ -1,4 +1,4 @@
-package com.damifan.test;
+package com.damifan.test.thread;
 
 import java.time.LocalTime;
 import java.util.Random;

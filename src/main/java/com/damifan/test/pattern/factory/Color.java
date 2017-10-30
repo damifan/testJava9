@@ -1,4 +1,4 @@
-package com.damifan.test.pattern.factoryPattern;
+package com.damifan.test.pattern.factory;
 
 /**
  * @author wanglei

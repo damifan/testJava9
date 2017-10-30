@@ -1,4 +1,4 @@
-package com.damifan.test;
+package com.damifan.test.thread;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
