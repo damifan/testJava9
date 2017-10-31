@@ -4,7 +4,7 @@ package com.damifan.test.pattern.singleton;
  * @author wanglei
  * @create 2017/10/26 16:47
  * <p>
- * TODO
+ * 推荐使用
  */
 public class SingleObject {
 
