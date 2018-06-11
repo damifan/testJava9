@@ -19,8 +19,9 @@ public class BlockingQueueTest {
             for (int i = 1; i < 10; i++) {
                 //                    blockingQueue.put("货物" + i);
                 boolean offer = blockingQueue.offer("货物" + i);
-                if (!offer)
+                if (!offer) {
                     System.out.println("队列已满，可放入" + blockingQueue.remainingCapacity());
+                }
                 System.out.println("可放入" + blockingQueue.remainingCapacity() + "成功往队列中放入货物" + i);
             }
         });
