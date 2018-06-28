@@ -23,7 +23,8 @@ public class StreamTest {
         stringCollection.add("ccc");
         stringCollection.add("bbb2");
         stringCollection.add("ddd1");
-
+        String[] array = new String[stringCollection.size()];
+        stringCollection.toArray(array);
         stringCollection
                 .stream()
                 .map(String::toUpperCase)
