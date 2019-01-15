@@ -1,11 +1,10 @@
 /**
- * @author wanglei
- * @email wanglei59@jd.com
- * @create 2017/9/27 13:26
  * <p>
- * TODO
+ *
+ * @TODO </p>
+ * @Author : WangLei
+ * @Date : 2019/1/15
  */
-module javaTest {
-    requires jdk.incubator.httpclient;
-
+module testJava9 {
+    requires java.net.http;
 }

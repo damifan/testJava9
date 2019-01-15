@@ -1,16 +1,13 @@
 package com.damifan.test;
 
-import jdk.incubator.http.HttpClient;
-import jdk.incubator.http.HttpHeaders;
-import jdk.incubator.http.HttpRequest;
-import jdk.incubator.http.HttpResponse;
 
 import java.io.IOException;
 import java.net.URI;
-import java.net.URISyntaxException;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
-import java.util.function.Supplier;
 
 /**
  * @author wanglei
@@ -29,16 +26,16 @@ public class HttpTest {
                         .header("User-Agent", "Java")
                         .GET()
                         .build();
-        HttpResponse<Integer> httpResponse =
-                httpClient.send(req, (statusCode, responseHeaders) -> HttpResponse.BodyProcessor.discard(statusCode));
+        HttpResponse<String> httpResponse =
+                httpClient.send(req, HttpResponse.BodyHandlers.ofString());
 
         System.out.println(httpResponse.body());
 
-        HttpResponse<String> httpResponse1 = httpClient.send(req, HttpResponse.BodyHandler.asString());
+        HttpResponse<String> httpResponse1 = httpClient.send(req, HttpResponse.BodyHandlers.ofString());
         System.out.println(httpResponse1.body());
 
-        CompletableFuture<HttpResponse<String>> httpResponse2 = httpClient.sendAsync(req, HttpResponse.BodyHandler.asString());
-        
+        CompletableFuture<HttpResponse<String>> httpResponse2 = httpClient.sendAsync(req, HttpResponse.BodyHandlers.ofString());
+
         System.out.println();
 
     }
