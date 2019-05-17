@@ -15,7 +15,10 @@ public class ExceptionTest {
         try (BufferedReader br = new BufferedReader(new FileReader(""))) {
             br.readLine();
         } catch (IOException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+//            System.out.println(e.getClass());
+            System.out.println(e.toString());
+            System.out.println(e.getMessage());
         }
     }
 }

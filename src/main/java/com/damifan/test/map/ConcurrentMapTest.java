@@ -36,10 +36,16 @@ public class ConcurrentMapTest {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ConcurrentMap concurrentMap = new ConcurrentHashMap();
         concurrentMap.put("test", "111");
         Object value = concurrentMap.get("test");
-        System.out.printf(value.toString());
+        System.out.printf(value.toString().hashCode() + "");
+        ConcurrentMapTest test = new ConcurrentMapTest();
+        test.tryCache("111");
+
+
+
+
     }
 }
