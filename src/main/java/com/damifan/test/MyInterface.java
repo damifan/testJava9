@@ -2,7 +2,7 @@ package com.damifan.test;
 
 /**
  * @author wanglei
- * @email wanglei59@jd.com
+ * @email wanglei59
  * @create 2017/9/27 13:20
  * <p>
  * TODO

@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * @author wanglei
- * @email wanglei59@jd.com
+ * @email wanglei59
  * @create 2017/10/11 18:34
  * <p>
  * TODO

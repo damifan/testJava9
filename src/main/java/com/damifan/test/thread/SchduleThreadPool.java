@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author wanglei
- * @email wanglei59@jd.com
+ * @email wanglei59
  * @create 2017/10/11 17:21
  * <p>
  * 创建一个定长的线程池，而且支持定时的以及周期性的任务执行，支持定时及周期性任务执行。

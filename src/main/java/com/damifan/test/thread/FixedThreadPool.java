@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 
 /**
  * @author wanglei
- * @email wanglei59@jd.com
+ * @email wanglei59
  * @create 2017/10/11 17:21
  * <p>
  * 创建一个指定工作线程数量的线程池。每当提交一个任务就创建一个工作线程，如果工作线程数量达到线程池初始的最大数，则将提交的任务存入到池队列中。

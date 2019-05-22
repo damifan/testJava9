@@ -6,7 +6,7 @@ import java.util.concurrent.*;
 
 /**
  * @author wanglei
- * @email wanglei59@jd.com
+ * @email wanglei59
  * @create 2017/9/28 17:23
  * <p>
  * TODO

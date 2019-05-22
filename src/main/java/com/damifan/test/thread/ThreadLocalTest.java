@@ -1,5 +1,9 @@
 package com.damifan.test.thread;
 
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * TODO
  *
@@ -18,6 +22,7 @@ public class ThreadLocalTest {
         new Thread(new MyStringTask("StringTask1")).start();
         new Thread(new MyIntegerTask("IntegerTask2")).start();
         new Thread(new MyStringTask("StringTask2")).start();
+        Map valueMap = Collections.synchronizedMap(new HashMap());
 
     }
 

@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 
 /**
  * @author wanglei
- * @email wanglei59@jd.com
+ * @email wanglei59
  * @create 2017/10/11 17:21
  * <p>
  * <p>

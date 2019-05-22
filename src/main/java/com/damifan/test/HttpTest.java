@@ -11,7 +11,7 @@ import java.util.concurrent.ExecutionException;
 
 /**
  * @author wanglei
- * @email wanglei59@jd.com
+ * @email wanglei59
  * @create 2017/9/20 16:25
  * <p>
  * TODO
